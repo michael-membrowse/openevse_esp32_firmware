@@ -12,6 +12,11 @@ on:
         required: true
         default: '100'
         type: string
+      targets:
+        description: 'Comma-separated target_names to onboard (empty = all targets)'
+        required: false
+        default: ''
+        type: string
 
 jobs:
   load-targets:
@@ -24,7 +29,13 @@ jobs:
 
       - name: Load target matrix
         id: set-matrix
-        run: echo "matrix=$(jq -c '.' .github/membrowse-targets.json)" >> $GITHUB_OUTPUT
+        env:
+          TARGETS: ${{ github.event.inputs.targets }}
+        run: |
+          echo "matrix=$(jq -c --arg t "$TARGETS" \
+            '($t | split(",") | map(gsub("^\\s+|\\s+$"; "")) | map(select(. != ""))) as $want
+             | if ($want | length) == 0 then . else map(select(.target_name as $n | $want | index($n))) end' \
+            .github/membrowse-targets.json)" >> $GITHUB_OUTPUT
 
   onboard:
     name: Onboard ${{ matrix.target_name }}

@@ -146,7 +146,7 @@
   {
     "target_name": "openevse_wifi_tft_v1",
     "setup_cmd": "pip install platformio==6.1.19",
-    "build_cmd": "pio run -e openevse_wifi_tft_v1",
+    "build_cmd": "pio run -e openevse_wifi_tft_v1 && if [ ! -f .pio/build/openevse_wifi_tft_v1/sections.ld ]; then LD=$(ls -d ~/.platformio/packages/framework-arduinoespressif32-libs/esp32/ld ~/.platformio/packages/framework-arduinoespressif32/tools/esp32-arduino-libs/esp32/ld 2>/dev/null | head -n1) && cp \"$LD/memory.ld\" \"$LD/sections.ld\" .pio/build/openevse_wifi_tft_v1/; fi",
     "elf": ".pio/build/openevse_wifi_tft_v1/firmware.elf",
     "ld": ".pio/build/openevse_wifi_tft_v1/memory.ld .pio/build/openevse_wifi_tft_v1/sections.ld",
     "map_file": ".pio/build/openevse_wifi_tft_v1/firmware.map",
@@ -155,7 +155,7 @@
   {
     "target_name": "openevse_wifi_tft_v1_dev",
     "setup_cmd": "pip install platformio==6.1.19",
-    "build_cmd": "pio run -e openevse_wifi_tft_v1_dev",
+    "build_cmd": "pio run -e openevse_wifi_tft_v1_dev && if [ ! -f .pio/build/openevse_wifi_tft_v1_dev/sections.ld ]; then LD=$(ls -d ~/.platformio/packages/framework-arduinoespressif32-libs/esp32/ld ~/.platformio/packages/framework-arduinoespressif32/tools/esp32-arduino-libs/esp32/ld 2>/dev/null | head -n1) && cp \"$LD/memory.ld\" \"$LD/sections.ld\" .pio/build/openevse_wifi_tft_v1_dev/; fi",
     "elf": ".pio/build/openevse_wifi_tft_v1_dev/firmware.elf",
     "ld": ".pio/build/openevse_wifi_tft_v1_dev/memory.ld .pio/build/openevse_wifi_tft_v1_dev/sections.ld",
     "map_file": ".pio/build/openevse_wifi_tft_v1_dev/firmware.map",
@@ -164,7 +164,7 @@
   {
     "target_name": "openevse_wifi_v1_16mb",
     "setup_cmd": "pip install platformio==6.1.19",
-    "build_cmd": "pio run -e openevse_wifi_v1_16mb",
+    "build_cmd": "pio run -e openevse_wifi_v1_16mb && if [ ! -f .pio/build/openevse_wifi_v1_16mb/sections.ld ]; then LD=$(ls -d ~/.platformio/packages/framework-arduinoespressif32-libs/esp32/ld ~/.platformio/packages/framework-arduinoespressif32/tools/esp32-arduino-libs/esp32/ld 2>/dev/null | head -n1) && cp \"$LD/memory.ld\" \"$LD/sections.ld\" .pio/build/openevse_wifi_v1_16mb/; fi",
     "elf": ".pio/build/openevse_wifi_v1_16mb/firmware.elf",
     "ld": ".pio/build/openevse_wifi_v1_16mb/memory.ld .pio/build/openevse_wifi_v1_16mb/sections.ld",
     "map_file": ".pio/build/openevse_wifi_v1_16mb/firmware.map",
