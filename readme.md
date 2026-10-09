@@ -1,5 +1,7 @@
 # OpenEVSE WiFi for ESP32
 
+[![MemBrowse](https://membrowse.com/badge.svg)](https://membrowse.com/public/michael-membrowse/openevse_esp32_firmware)
+
 > This release recommends OpenEVSE firmware [9.0.0](https://github.com/OpenEVSE/open_evse/releases) (minimum [7.1.3](https://github.com/OpenEVSE/open_evse/releases)); features including Solar Divert and push-button menus may not behave as expected on older firmware.
 
 - *For the older WiFi V2.x ESP8266 version (pre June 2020), see the [v2 firmware repository](https://github.com/openevse/ESP8266_WiFi_v2.x/)*

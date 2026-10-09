@@ -1,0 +1,173 @@
+[
+  {
+    "target_name": "nodemcu-32s",
+    "setup_cmd": "pip install platformio==6.1.19",
+    "build_cmd": "PLATFORMIO_BUILD_FLAGS=\"-Wl,-Map=.pio/build/nodemcu-32s/firmware.map\" pio run -e nodemcu-32s && LD=$(ls -d ~/.platformio/packages/framework-arduinoespressif32*/tools/sdk/esp32/ld | head -n1) && cp \"$LD/memory.ld\" \"$LD/sections.ld\" .pio/build/nodemcu-32s/",
+    "elf": ".pio/build/nodemcu-32s/firmware.elf",
+    "ld": ".pio/build/nodemcu-32s/memory.ld .pio/build/nodemcu-32s/sections.ld",
+    "map_file": ".pio/build/nodemcu-32s/firmware.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "espressif_esp-wrover-kit",
+    "setup_cmd": "pip install platformio==6.1.19",
+    "build_cmd": "PLATFORMIO_BUILD_FLAGS=\"-Wl,-Map=.pio/build/espressif_esp-wrover-kit/firmware.map\" pio run -e espressif_esp-wrover-kit && LD=$(ls -d ~/.platformio/packages/framework-arduinoespressif32*/tools/sdk/esp32/ld | head -n1) && cp \"$LD/memory.ld\" \"$LD/sections.ld\" .pio/build/espressif_esp-wrover-kit/",
+    "elf": ".pio/build/espressif_esp-wrover-kit/firmware.elf",
+    "ld": ".pio/build/espressif_esp-wrover-kit/memory.ld .pio/build/espressif_esp-wrover-kit/sections.ld",
+    "map_file": ".pio/build/espressif_esp-wrover-kit/firmware.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "espressif_esp-wrover-kit_latest",
+    "setup_cmd": "pip install platformio==6.1.19",
+    "build_cmd": "PLATFORMIO_BUILD_FLAGS=\"-Wl,-Map=.pio/build/espressif_esp-wrover-kit_latest/firmware.map\" pio run -e espressif_esp-wrover-kit_latest && LD=$(ls -d ~/.platformio/packages/framework-arduinoespressif32*/tools/sdk/esp32/ld | head -n1) && cp \"$LD/memory.ld\" \"$LD/sections.ld\" .pio/build/espressif_esp-wrover-kit_latest/",
+    "elf": ".pio/build/espressif_esp-wrover-kit_latest/firmware.elf",
+    "ld": ".pio/build/espressif_esp-wrover-kit_latest/memory.ld .pio/build/espressif_esp-wrover-kit_latest/sections.ld",
+    "map_file": ".pio/build/espressif_esp-wrover-kit_latest/firmware.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "adafruit_huzzah32_dev",
+    "setup_cmd": "pip install platformio==6.1.19",
+    "build_cmd": "PLATFORMIO_BUILD_FLAGS=\"-Wl,-Map=.pio/build/adafruit_huzzah32_dev/firmware.map\" pio run -e adafruit_huzzah32_dev && LD=$(ls -d ~/.platformio/packages/framework-arduinoespressif32*/tools/sdk/esp32/ld | head -n1) && cp \"$LD/memory.ld\" \"$LD/sections.ld\" .pio/build/adafruit_huzzah32_dev/",
+    "elf": ".pio/build/adafruit_huzzah32_dev/firmware.elf",
+    "ld": ".pio/build/adafruit_huzzah32_dev/memory.ld .pio/build/adafruit_huzzah32_dev/sections.ld",
+    "map_file": ".pio/build/adafruit_huzzah32_dev/firmware.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "adafruit_huzzah32",
+    "setup_cmd": "pip install platformio==6.1.19",
+    "build_cmd": "PLATFORMIO_BUILD_FLAGS=\"-Wl,-Map=.pio/build/adafruit_huzzah32/firmware.map\" pio run -e adafruit_huzzah32 && LD=$(ls -d ~/.platformio/packages/framework-arduinoespressif32*/tools/sdk/esp32/ld | head -n1) && cp \"$LD/memory.ld\" \"$LD/sections.ld\" .pio/build/adafruit_huzzah32/",
+    "elf": ".pio/build/adafruit_huzzah32/firmware.elf",
+    "ld": ".pio/build/adafruit_huzzah32/memory.ld .pio/build/adafruit_huzzah32/sections.ld",
+    "map_file": ".pio/build/adafruit_huzzah32/firmware.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "adafruit_featheresp32",
+    "setup_cmd": "pip install platformio==6.1.19",
+    "build_cmd": "PLATFORMIO_BUILD_FLAGS=\"-Wl,-Map=.pio/build/adafruit_featheresp32/firmware.map\" pio run -e adafruit_featheresp32 && LD=$(ls -d ~/.platformio/packages/framework-arduinoespressif32*/tools/sdk/esp32/ld | head -n1) && cp \"$LD/memory.ld\" \"$LD/sections.ld\" .pio/build/adafruit_featheresp32/",
+    "elf": ".pio/build/adafruit_featheresp32/firmware.elf",
+    "ld": ".pio/build/adafruit_featheresp32/memory.ld .pio/build/adafruit_featheresp32/sections.ld",
+    "map_file": ".pio/build/adafruit_featheresp32/firmware.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "openevse_wifi_v1",
+    "setup_cmd": "pip install platformio==6.1.19",
+    "build_cmd": "PLATFORMIO_BUILD_FLAGS=\"-Wl,-Map=.pio/build/openevse_wifi_v1/firmware.map\" pio run -e openevse_wifi_v1 && LD=$(ls -d ~/.platformio/packages/framework-arduinoespressif32*/tools/sdk/esp32/ld | head -n1) && cp \"$LD/memory.ld\" \"$LD/sections.ld\" .pio/build/openevse_wifi_v1/",
+    "elf": ".pio/build/openevse_wifi_v1/firmware.elf",
+    "ld": ".pio/build/openevse_wifi_v1/memory.ld .pio/build/openevse_wifi_v1/sections.ld",
+    "map_file": ".pio/build/openevse_wifi_v1/firmware.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "olimex_esp32-gateway-old",
+    "setup_cmd": "pip install platformio==6.1.19",
+    "build_cmd": "PLATFORMIO_BUILD_FLAGS=\"-Wl,-Map=.pio/build/olimex_esp32-gateway-old/firmware.map\" pio run -e olimex_esp32-gateway-old && LD=$(ls -d ~/.platformio/packages/framework-arduinoespressif32*/tools/sdk/esp32/ld | head -n1) && cp \"$LD/memory.ld\" \"$LD/sections.ld\" .pio/build/olimex_esp32-gateway-old/",
+    "elf": ".pio/build/olimex_esp32-gateway-old/firmware.elf",
+    "ld": ".pio/build/olimex_esp32-gateway-old/memory.ld .pio/build/olimex_esp32-gateway-old/sections.ld",
+    "map_file": ".pio/build/olimex_esp32-gateway-old/firmware.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "olimex_esp32-gateway-e",
+    "setup_cmd": "pip install platformio==6.1.19",
+    "build_cmd": "PLATFORMIO_BUILD_FLAGS=\"-Wl,-Map=.pio/build/olimex_esp32-gateway-e/firmware.map\" pio run -e olimex_esp32-gateway-e && LD=$(ls -d ~/.platformio/packages/framework-arduinoespressif32*/tools/sdk/esp32/ld | head -n1) && cp \"$LD/memory.ld\" \"$LD/sections.ld\" .pio/build/olimex_esp32-gateway-e/",
+    "elf": ".pio/build/olimex_esp32-gateway-e/firmware.elf",
+    "ld": ".pio/build/olimex_esp32-gateway-e/memory.ld .pio/build/olimex_esp32-gateway-e/sections.ld",
+    "map_file": ".pio/build/olimex_esp32-gateway-e/firmware.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "olimex_esp32-gateway-f",
+    "setup_cmd": "pip install platformio==6.1.19",
+    "build_cmd": "PLATFORMIO_BUILD_FLAGS=\"-Wl,-Map=.pio/build/olimex_esp32-gateway-f/firmware.map\" pio run -e olimex_esp32-gateway-f && LD=$(ls -d ~/.platformio/packages/framework-arduinoespressif32*/tools/sdk/esp32/ld | head -n1) && cp \"$LD/memory.ld\" \"$LD/sections.ld\" .pio/build/olimex_esp32-gateway-f/",
+    "elf": ".pio/build/olimex_esp32-gateway-f/firmware.elf",
+    "ld": ".pio/build/olimex_esp32-gateway-f/memory.ld .pio/build/olimex_esp32-gateway-f/sections.ld",
+    "map_file": ".pio/build/olimex_esp32-gateway-f/firmware.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "olimex_esp32-gateway-e_dev",
+    "setup_cmd": "pip install platformio==6.1.19",
+    "build_cmd": "PLATFORMIO_BUILD_FLAGS=\"-Wl,-Map=.pio/build/olimex_esp32-gateway-e_dev/firmware.map\" pio run -e olimex_esp32-gateway-e_dev && LD=$(ls -d ~/.platformio/packages/framework-arduinoespressif32*/tools/sdk/esp32/ld | head -n1) && cp \"$LD/memory.ld\" \"$LD/sections.ld\" .pio/build/olimex_esp32-gateway-e_dev/",
+    "elf": ".pio/build/olimex_esp32-gateway-e_dev/firmware.elf",
+    "ld": ".pio/build/olimex_esp32-gateway-e_dev/memory.ld .pio/build/olimex_esp32-gateway-e_dev/sections.ld",
+    "map_file": ".pio/build/olimex_esp32-gateway-e_dev/firmware.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "olimex_esp32-gateway-f_dev",
+    "setup_cmd": "pip install platformio==6.1.19",
+    "build_cmd": "PLATFORMIO_BUILD_FLAGS=\"-Wl,-Map=.pio/build/olimex_esp32-gateway-f_dev/firmware.map\" pio run -e olimex_esp32-gateway-f_dev && LD=$(ls -d ~/.platformio/packages/framework-arduinoespressif32*/tools/sdk/esp32/ld | head -n1) && cp \"$LD/memory.ld\" \"$LD/sections.ld\" .pio/build/olimex_esp32-gateway-f_dev/",
+    "elf": ".pio/build/olimex_esp32-gateway-f_dev/firmware.elf",
+    "ld": ".pio/build/olimex_esp32-gateway-f_dev/memory.ld .pio/build/olimex_esp32-gateway-f_dev/sections.ld",
+    "map_file": ".pio/build/olimex_esp32-gateway-f_dev/firmware.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "olimex_esp32-poe-iso",
+    "setup_cmd": "pip install platformio==6.1.19",
+    "build_cmd": "PLATFORMIO_BUILD_FLAGS=\"-Wl,-Map=.pio/build/olimex_esp32-poe-iso/firmware.map\" pio run -e olimex_esp32-poe-iso && LD=$(ls -d ~/.platformio/packages/framework-arduinoespressif32*/tools/sdk/esp32/ld | head -n1) && cp \"$LD/memory.ld\" \"$LD/sections.ld\" .pio/build/olimex_esp32-poe-iso/",
+    "elf": ".pio/build/olimex_esp32-poe-iso/firmware.elf",
+    "ld": ".pio/build/olimex_esp32-poe-iso/memory.ld .pio/build/olimex_esp32-poe-iso/sections.ld",
+    "map_file": ".pio/build/olimex_esp32-poe-iso/firmware.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "heltec_esp32-wifi-lora-v2",
+    "setup_cmd": "pip install platformio==6.1.19",
+    "build_cmd": "PLATFORMIO_BUILD_FLAGS=\"-Wl,-Map=.pio/build/heltec_esp32-wifi-lora-v2/firmware.map\" pio run -e heltec_esp32-wifi-lora-v2 && LD=$(ls -d ~/.platformio/packages/framework-arduinoespressif32*/tools/sdk/esp32/ld | head -n1) && cp \"$LD/memory.ld\" \"$LD/sections.ld\" .pio/build/heltec_esp32-wifi-lora-v2/",
+    "elf": ".pio/build/heltec_esp32-wifi-lora-v2/firmware.elf",
+    "ld": ".pio/build/heltec_esp32-wifi-lora-v2/memory.ld .pio/build/heltec_esp32-wifi-lora-v2/sections.ld",
+    "map_file": ".pio/build/heltec_esp32-wifi-lora-v2/firmware.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "wt32-eth01",
+    "setup_cmd": "pip install platformio==6.1.19",
+    "build_cmd": "PLATFORMIO_BUILD_FLAGS=\"-Wl,-Map=.pio/build/wt32-eth01/firmware.map\" pio run -e wt32-eth01 && LD=$(ls -d ~/.platformio/packages/framework-arduinoespressif32*/tools/sdk/esp32/ld | head -n1) && cp \"$LD/memory.ld\" \"$LD/sections.ld\" .pio/build/wt32-eth01/",
+    "elf": ".pio/build/wt32-eth01/firmware.elf",
+    "ld": ".pio/build/wt32-eth01/memory.ld .pio/build/wt32-eth01/sections.ld",
+    "map_file": ".pio/build/wt32-eth01/firmware.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "esp32-c3-devkitc-02",
+    "setup_cmd": "pip install platformio==6.1.19",
+    "build_cmd": "PLATFORMIO_BUILD_FLAGS=\"-Wl,-Map=.pio/build/esp32-c3-devkitc-02/firmware.map\" pio run -e esp32-c3-devkitc-02 && LD=$(ls -d ~/.platformio/packages/framework-arduinoespressif32*/tools/sdk/esp32c3/ld | head -n1) && cp \"$LD/memory.ld\" \"$LD/sections.ld\" .pio/build/esp32-c3-devkitc-02/",
+    "elf": ".pio/build/esp32-c3-devkitc-02/firmware.elf",
+    "ld": ".pio/build/esp32-c3-devkitc-02/memory.ld .pio/build/esp32-c3-devkitc-02/sections.ld",
+    "map_file": ".pio/build/esp32-c3-devkitc-02/firmware.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "openevse_wifi_tft_v1",
+    "setup_cmd": "pip install platformio==6.1.19",
+    "build_cmd": "pio run -e openevse_wifi_tft_v1",
+    "elf": ".pio/build/openevse_wifi_tft_v1/firmware.elf",
+    "ld": ".pio/build/openevse_wifi_tft_v1/memory.ld .pio/build/openevse_wifi_tft_v1/sections.ld",
+    "map_file": ".pio/build/openevse_wifi_tft_v1/firmware.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "openevse_wifi_tft_v1_dev",
+    "setup_cmd": "pip install platformio==6.1.19",
+    "build_cmd": "pio run -e openevse_wifi_tft_v1_dev",
+    "elf": ".pio/build/openevse_wifi_tft_v1_dev/firmware.elf",
+    "ld": ".pio/build/openevse_wifi_tft_v1_dev/memory.ld .pio/build/openevse_wifi_tft_v1_dev/sections.ld",
+    "map_file": ".pio/build/openevse_wifi_tft_v1_dev/firmware.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "openevse_wifi_v1_16mb",
+    "setup_cmd": "pip install platformio==6.1.19",
+    "build_cmd": "pio run -e openevse_wifi_v1_16mb",
+    "elf": ".pio/build/openevse_wifi_v1_16mb/firmware.elf",
+    "ld": ".pio/build/openevse_wifi_v1_16mb/memory.ld .pio/build/openevse_wifi_v1_16mb/sections.ld",
+    "map_file": ".pio/build/openevse_wifi_v1_16mb/firmware.map",
+    "linker_vars": ""
+  }
+]
